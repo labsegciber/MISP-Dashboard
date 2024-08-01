@@ -1,0 +1,11 @@
+SELECT 
+    'events.date' AS 'date', 
+    COUNT(*) AS 'count' 
+FROM 
+    'events' 
+WHERE 
+    'events.date' >= '2020-01-01' 
+GROUP BY 
+    'events.date' 
+ORDER BY 
+    'events.date' ASC
